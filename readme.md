@@ -2,7 +2,7 @@
 
 <!--Para crear encabezados utilizamos tantos # como queremos que sea nuestro encabezado, por ejemplo para h1 utilizamos #, para h2 ## y así con los demás.-->
 
-## Citas
+## Información General
 
 <!--Para añadir una cita solo tenemos que añadir mayor qué, y para crear una cita con saltos de líneas, solo cambiamos de línea y añadimos el mísmo símbolo al inicio.-->
 
@@ -14,20 +14,23 @@
 + Formulario de registro
 * Página de contacto
 
-### Numeradas
-
 <!--Para crear listas numeradas es tan sencillo como decidir el número del elemento en la lista y aádirlo antes del elemento seguido de un punto, para anidar elementos podemos introducir una tabulación y repetir el proceso que hemos realizado con aterioridad.-->
 
-1. Elemento1
-2. Elemento2
-3. Elemento3
-    - Elemento4
+> En la siguiente lista veremos más detenidamente el contenido de cada uno de los elementos del menú
 
-## Separaciones
+1. Index
+    - Cambio de tema de la página
+    - Información general del gimnasio
+2. Formulario de la página
+    - Correo electronico
+    - Contraseña
+    - Confirmar contraseña
+    - Código de socio
+4. Página de contacto
+    - Mapa de cada uno de los gimnasios
+    - Información del gerente de cada una de las sucursales
 
 <!--Para hacer una separación, introducimos 3 guiones bajos seguidos-->
-
-Esto es una separación
 ___
 
 ## Negrita y Cursiva
