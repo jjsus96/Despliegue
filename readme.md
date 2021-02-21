@@ -1,29 +1,18 @@
-# Markdown
+# Proyecto Gimnasio 360
 
 <!--Para crear encabezados utilizamos tantos # como queremos que sea nuestro encabezado, por ejemplo para h1 utilizamos #, para h2 ## y así con los demás.-->
-
-# Encabezado1
-## Encabezado2
-### Encabezado3
-#### Encabezado4
-##### Encabezado5
-###### Encabezado6
 
 ## Citas
 
 <!--Para añadir una cita solo tenemos que añadir mayor qué, y para crear una cita con saltos de líneas, solo cambiamos de línea y añadimos el mísmo símbolo al inicio.-->
 
-> Esto es una cita
-> continuación de la cita
+> El proyecto trata sobre una página web de un gimnasio en el cual los socios obtienen información sobre las clases impartidas y sobre el propio gimnasio una vez que acceden a esta, actualmente está en consturucción y los elementos que está creados son:
 
-## Listas
-### Desordenadas
+<!--Para crear listas desordenadas, ponemos antes del inicio de cada elemento un guión, algunas aplicaciones también aceptan el símbolo más y un asterisco para esto.-->
 
-<!--Para crear listas, ponemos antes del inicio de cada elemento un guión, algunas aplicaciones también aceptan el símbolo más y un asterisco para esto.-->
-
-- Elemento1
-+ Elemento2
-* Elemento3
+- Index
++ Formulario de registro
+* Página de contacto
 
 ### Numeradas
 
