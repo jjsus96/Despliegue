@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="">
+    <link rel="stylesheet" type="text/css" href="../css/estiloscontacto.css">
+    <html lang="es">
+<html>
+<head>
+    <title>Contacto</title>
+</head>
+<body>
+    <header> <!--Aquí empieza el menú de navegación-->
+        <nav class="topnav" id="myTopnav">
+            <a id="celdalogo" href="index.html"><img src="../imagenes/Logo.jpg" alt="logo"></a><!--Icono del logo que redirige al inicio-->
+            <a href="#">EVENTOS</a>
+            <a href="#">FORO</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a id="menuderecha" href="#">ACCESO</a>
+            <a id="menuderecha" href="registro.html">REGISTRO</a>
+             <!--Llamada a la función de js para el menú responsive-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>     
+    </header>
+    <div class="container">
+        <div class="item verde"><!--Esta es una de las dos columnas que tenemos hechas en esta página con responsive-->
+            <br>
+            <br>
+            <h1>PUERTO REAL</h1>
+        <div id="ifr"><!--Este es el iframe con el mapa de puerto real por google maps-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d801.4257174113636!2d-6.192330543545658!3d36.53716216674545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgimnasio%20360!5e0!3m2!1ses!2ses!4v1607629612975!5m2!1ses!2ses" width="" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+            <br>
+            <br>
+            <img id="pequeña1" src="../imagenes/index22.jpg" alt="fotocara"><!--foto de la persona encargada en cadiz-->
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis no
+                n diam faucibus, tristique ante vitae, 
+                lobortis lorem. Integer eu eros commodo, rhoncus leo nec, moll
+                is enim. Phasellus eget augue nulla. 
+                Pellentesque sodales dictum ultrices. Fusce efficitur felis sed orci</p><!--esto solo es un texto con información al que le añadiremos contenido en el futuro-->
+        </div>
+        <div class="item azul"><!--Esta es una de las dos columnas que tenemos hechas en esta página con responsive-->
+            <br>
+            <br>
+            <img id="pequeña2" src="../imagenes/index11.jpg" alt="fotocara"><!--foto de la persona encargada en puerto real-->
+            <br>
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis no
+                n diam faucibus, tristique ante vitae, 
+                lobortis lorem. Integer eu eros commodo, rhoncus leo nec, moll
+                is enim. Phasellus eget augue nulla. 
+                Pellentesque sodales dictum ultrices. Fusce efficitur felis sed orci</p><!--esto solo es un texto con información al que le añadiremos contenido en el futuro-->
+                <h1>CÁDIZ</h1>
+                <div id="ifr"> <!--Este es el iframe con el mapa de cádiz por google maps-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3207.0451260177397!2d-6.276783968296329!3d36.50477278227301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgimnasio%20360!5e0!3m2!1ses!2ses!4v1607630096144!5m2!1ses!2ses" width="" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            <br><!--Tanto br es por un error que me dá el footer por el que se me centra en la pantalla y no consigo solucionar, en cuanto lo solucione van fuera-->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <footer> <!--Pié con la marca del gimnasio y los iconos para enlazar a las redes sociales-->
+        <p id="ppie">GIMNASIO 360 ©</p>
+        <div id="iconos">
+        <a href="#"><i class="fab fa-twitter-square" style="font-size: 40;"></i></a><!--Icono de twitter-->
+        <a href="#"><i class="fab fa-facebook-square" style="font-size: 40;"></i></a><!--Icono de facebook-->
+        <a href="#"><i class="fab fa-instagram-square" style="font-size: 40;"></i></a><!--Icono de instagram-->
+        </div>
+    </footer>
+</body>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> <!--Script para los iconos-->
+<!--Script para que el menú sea responsive-->
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</html>

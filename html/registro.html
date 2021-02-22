@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="">
+    <link rel="stylesheet" type="text/css" href="../css/estilosregistro.css">
+    <html lang="es">
+<html>
+<head>
+    <title>Registro</title>
+</head>
+<body>
+    <div id="contenedor">
+    <header>  <!--Aquí empieza el menú de navegación-->
+        <nav class="topnav" id="myTopnav">
+            <a id="celdalogo" href="index.html"><img src="../imagenes/Logo.jpg" alt="logo"></a><!--Icono del logo que redirige al inicio-->
+            <a href="#">EVENTOS</a>
+            <a href="#">FORO</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a id="menuderecha" href="#">ACCESO</a>
+            <!--Llamada a la función de js para el menú responsive-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>   
+    </header>
+        <section id="contenido">
+            <article>
+               <form action="../html/index.html">
+                  <div class="container">
+                    <br>
+                    <h1>REGISTRO</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="email"><b>CORREO ELECTRÓNICO</b></label><!--Estas son las celdas en las que se introduce la información para el registro (en un futuro con funcionalidad)-->
+                    <br>
+                    <input type="text" placeholder="CORREO ELECTRÓNICO">
+                    <br>
+                    <label for="email"><b>CONTRASEÑA</b></label>
+                    <br>
+                    <input type="text" placeholder="INTRODUCIR CONTRASEÑA">
+                    <br>
+                    <label for="psw"><b>CONFIRMAR CONTRASEÑA</b></label>
+                    <br>
+                    <input type="password" placeholder="CONFIRMAR CONTRASEÑA">
+                    <br>
+                    <label for="psw-repeat"><b>CÓDIGO DE SOCIO</b></label>
+                    <br>
+                    <input type="password" placeholder="OPCIONAL">
+                    <br>
+                    <button class="registerbtn">REGISTRO</button><!--El botón de momento solo redirige a la página de inicio pero lo mismo, a futuro realizará su función-->
+                    <br><!--Tanto br es por un error que me dá el footer por el que se me centra en la pantalla y no consigo solucionar, en cuanto lo solucione van fuera-->
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>                   
+                  </div>
+                </form>
+            </article>
+        </section>
+    </div>
+    <footer> <!--Pié con la marca del gimnasio y los iconos para enlazar a las redes sociales-->
+        <p id="ppie">GIMNASIO 360 ©</p>
+        <div id="iconos">
+        <a href="#"><i class="fab fa-twitter-square" style="font-size: 40;"></i></a><!--Icono de twitter-->
+        <a href="#"><i class="fab fa-facebook-square" style="font-size: 40;"></i></a><!--Icono de Facebook-->
+        <a href="#"><i class="fab fa-instagram-square" style="font-size: 40;"></i></a><!--Icono de Instagram-->
+        </div>
+    </footer>
+</body>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script><!--Script para los iconos-->
+<!--Script para que el menú sea responsive-->
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</html>

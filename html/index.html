@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="">
+    <link rel="stylesheet" type="text/css" href="../css/estilosindex.css">
+    <html lang="es">
+<html>
+<head>
+    <title>Inicio</title>
+</head>
+<body>
+    <header> <!--Aquí empieza el menú de navegación-->
+        <nav class="topnav" id="myTopnav">
+            <a id="celdalogo" href="index.html"><img src="../imagenes/Logo.jpg" alt="logo"></a><!--Icono del logo que redirige al inicio-->
+            <a href="#">EVENTOS</a>
+            <a href="#">FORO</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a id="menuderecha" href="#">ACCESO</a>
+            <a id="menuderecha" href="registro.html">REGISTRO</a>
+             <!--Llamada a la función de js para el menú responsive-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>    
+    </header> 
+    <div class="boton-oscuro"><button class="boton-oscurobtn" id="boton-oscurobtn">CAMBIO MODO</button> </div> <!--Este es el botón con el que cambiamos al modo oscuro/claro-->
+    <div class="container">
+        <div class="item rojo"><!--Esta es una de las tres columnas que tenemos hechas en esta página con responsive-->
+            <br>
+            <br>
+            <img id="grande" src="../imagenes/index1.jpg" alt="Tio fuerte"><!--Foto del gimnasio con información bajo ella-->
+            <br>
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis no
+                n diam faucibus, tristique ante vitae, 
+                lobortis lorem. Integer eu eros commodo, rhoncus leo nec, moll
+                is enim. Phasellus eget augue nulla. 
+                Pellentesque sodales dictum ultrices. Fusce efficitur felis sed orci</p><!--Esto es el texto informativo bajo la foto al que le añadiremos la información a futuro-->
+            <img id="pequeña" src="../imagenes/index11.jpg" alt="Foto cara"><!--Foto deun cliente con testimonio debajo-->
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing eliti.</p><!--testimonio del cliente-->
+        </div>
+        <div class="item verde"><!--Esta es una de las tres columnas que tenemos hechas en esta página con responsive-->
+            <br>
+            <br>
+            <img id="grande" src="../imagenes/index2.jpg" alt="Un gimnasio"><!--Foto del gimnasio con información bajo ella-->
+            <br>
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis no
+                n diam faucibus, tristique ante vitae, 
+                lobortis lorem. Integer eu eros commodo, rhoncus leo nec, moll
+                is enim. Phasellus eget augue nulla. 
+                Pellentesque sodales dictum ultrices. Fusce efficitur felis sed orci</p><!--Esto es el texto informativo bajo la foto al que le añadiremos la información a futuro-->
+            <img id="pequeña" src="../imagenes/index22.jpg" alt="Foto cara"><!--Foto deun cliente con testimonio debajo-->
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing eliti.</p><!--testimonio del cliente-->
+        </div>
+        <div class="item azul"><!--Esta es una de las tres columnas que tenemos hechas en esta página con responsive-->
+            <br>
+            <br>
+            <img id="grande" src="../imagenes/index3.jpg" alt="Tia fitness"><!--Foto del gimnasio con información bajo ella-->
+            <br>
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis no
+                n diam faucibus, tristique ante vitae, 
+                lobortis lorem. Integer eu eros commodo, rhoncus leo nec, moll
+                is enim. Phasellus eget augue nulla. 
+                Pellentesque sodales dictum ultrices. Fusce efficitur felis sed orci</p><!--Esto es el texto informativo bajo la foto al que le añadiremos la información a futuro-->
+            <img id="pequeña" src="../imagenes/index33.jpg" alt="Foto cara"><!--Foto deun cliente con testimonio debajo-->
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing eliti.</p><!--testimonio del cliente-->
+        </div>
+    </div>
+    <footer> <!--Pié con la marca del gimnasio y los iconos para enlazar a las redes sociales-->
+        <p id="ppie">GIMNASIO 360 ©</p>
+        <div id="iconos">
+        <a href="#"><i class="fab fa-twitter-square" style="font-size: 40;"></i></a><!--Icono de twitter-->
+        <a href="#"><i class="fab fa-facebook-square" style="font-size: 40;"></i></a><!--Icono de facebook-->
+        <a href="#"><i class="fab fa-instagram-square" style="font-size: 40;"></i></a><!--Icono de instagram-->
+        </div>
+    </footer>
+</body>
+<!--Script para cambiar de modo noche/dia-->
+<script>
+    const boscuro = document.querySelector('.boton-oscurobtn');
+    const cuerpo = document.querySelector('body');
+
+    boscuro.addEventListener('click', e => {
+        cuerpo.classList.toggle('modoOscuro')
+    })
+</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> <!--Script para los iconos-->
+<!--Script para que el menú sea responsive-->
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</html>
