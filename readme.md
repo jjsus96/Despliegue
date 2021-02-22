@@ -57,7 +57,7 @@ ___
 
 <!--Si queremos añadir código en nuestra página la mejor forma es usar 3 virgulillas por arriba y 3 por abajo, así reconocerá que es código-->
 
-*** Aquí podemos ver la estructura de la página index.html a partir de la cual está creada el resto de la página ***
+***Aquí podemos ver la estructura de la página index.html a partir de la cual está creada el resto de la página***
 
 ~~~
 <!DOCTYPE html>
