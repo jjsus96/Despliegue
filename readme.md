@@ -41,17 +41,23 @@ ___
 
 <!--Para esto lo realizamos como en el paso anterior, pero en lugar de escribir un enlace, escribimos la ruta de en la que se encuentra nuestra imagen y justo al inicio le añadimos un signo de exclamación-->
 
+**Index.html**
+
 [![2.png](https://i.postimg.cc/sDwppWGh/2.png)](https://postimg.cc/fJStsJKz)
 
-[![3.png](https://i.postimg.cc/fb0mng2c/3.png)](https://postimg.cc/QBhHcSrC)
+**Formulario de registro**
 
 [![3.png](https://i.postimg.cc/fb0mng2c/3.png)](https://postimg.cc/QBhHcSrC)
+
+**Página de contacto**
+
+[![1.png](https://i.postimg.cc/yWq2jGbL/1.png)](https://postimg.cc/XB827s35)
 
 ## Código
 
 <!--Si queremos añadir código en nuestra página la mejor forma es usar 3 virgulillas por arriba y 3 por abajo, así reconocerá que es código-->
 
-***Aquí podemos ver la estructura de la página index.html a partir de la cual está creada el resto de la página ***
+*** Aquí podemos ver la estructura de la página index.html a partir de la cual está creada el resto de la página ***
 
 ~~~
 <!DOCTYPE html>
