@@ -33,38 +33,128 @@
 <!--Para hacer una separación, introducimos 3 guiones bajos seguidos-->
 ___
 
-## Negrita y Cursiva
+## Imágenes del proceso
 
 <!--Si rodeamos nuestra frase se aplicará cursiva a nuestro texto, si en lugar de uno usamos 2 se pondra en negrita y si usamos 3 asteriscos se aplicaran los 2 estilos como en el ejemplo.-->
 
-***Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum***
-
-### Enlaces
-
-<!--En primer lugar, introducimos entre corchetes nuestro texto ancla y después entre paréntesis el enlace que queremos añadir, si añadimos entre comillas dentro de los paréntesis texto después del enlace, este será el tittle del enlace. -->
-
-[Esto es un enlace a google](https://www.google.es"Enlace a google")
-
-<!--Si queremos que el propio enlace sea el enlace, lo añadiremos entre mayor qué y menor qué.-->
-
-<https://www.google.es>
-
-## Imágenes
+***En este apartado veremos cómo va por el momento el proceso de la página, a medida que se actualice, modificaremos este apartado para que se vean los diferentes cambios realizados mediante imágenes***
 
 <!--Para esto lo realizamos como en el paso anterior, pero en lugar de escribir un enlace, escribimos la ruta de en la que se encuentra nuestra imagen y justo al inicio le añadimos un signo de exclamación-->
 
-![Imagen](https://www.google.com/url?sa=i&url=https%3A%2F%2Fempresas.blogthinkbig.com%2Fcomo-obtener-imagenes-para-textos%2F&psig=AOvVaw33MR95gNonLVwq1RffR2gS&ust=1614030203053000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjFoZr5--4CFQAAAAAdAAAAABAJ)
+[![2.png](https://i.postimg.cc/sDwppWGh/2.png)](https://postimg.cc/fJStsJKz)
+
+[![3.png](https://i.postimg.cc/fb0mng2c/3.png)](https://postimg.cc/QBhHcSrC)
+
+[![3.png](https://i.postimg.cc/fb0mng2c/3.png)](https://postimg.cc/QBhHcSrC)
 
 ## Código
 
 <!--Si queremos añadir código en nuestra página la mejor forma es usar 3 virgulillas por arriba y 3 por abajo, así reconocerá que es código-->
 
+***Aquí podemos ver la estructura de la página index.html a partir de la cual está creada el resto de la página ***
+
 ~~~
-Esto es código
+<!DOCTYPE html>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="">
+    <link rel="stylesheet" type="text/css" href="../css/estilosindex.css">
+    <html lang="es">
+<html>
+<head>
+    <title>Inicio</title>
+</head>
+<body>
+    <header> <!--Aquí empieza el menú de navegación-->
+        <nav class="topnav" id="myTopnav">
+            <a id="celdalogo" href="index.html"><img src="../imagenes/Logo.jpg" alt="logo"></a><!--Icono del logo que redirige al inicio-->
+            <a href="#">EVENTOS</a>
+            <a href="#">FORO</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a id="menuderecha" href="#">ACCESO</a>
+            <a id="menuderecha" href="registro.html">REGISTRO</a>
+             <!--Llamada a la función de js para el menú responsive-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>    
+    </header> 
+    <div class="boton-oscuro"><button class="boton-oscurobtn" id="boton-oscurobtn">CAMBIO MODO</button> </div> <!--Este es el botón con el que cambiamos al modo oscuro/claro-->
+    <div class="container">
+        <div class="item rojo"><!--Esta es una de las tres columnas que tenemos hechas en esta página con responsive-->
+            <br>
+            <br>
+            <img id="grande" src="../imagenes/index1.jpg" alt="Tio fuerte"><!--Foto del gimnasio con información bajo ella-->
+            <br>
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis no
+                n diam faucibus, tristique ante vitae, 
+                lobortis lorem. Integer eu eros commodo, rhoncus leo nec, moll
+                is enim. Phasellus eget augue nulla. 
+                Pellentesque sodales dictum ultrices. Fusce efficitur felis sed orci</p><!--Esto es el texto informativo bajo la foto al que le añadiremos la información a futuro-->
+            <img id="pequeña" src="../imagenes/index11.jpg" alt="Foto cara"><!--Foto deun cliente con testimonio debajo-->
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing eliti.</p><!--testimonio del cliente-->
+        </div>
+        <div class="item verde"><!--Esta es una de las tres columnas que tenemos hechas en esta página con responsive-->
+            <br>
+            <br>
+            <img id="grande" src="../imagenes/index2.jpg" alt="Un gimnasio"><!--Foto del gimnasio con información bajo ella-->
+            <br>
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis no
+                n diam faucibus, tristique ante vitae, 
+                lobortis lorem. Integer eu eros commodo, rhoncus leo nec, moll
+                is enim. Phasellus eget augue nulla. 
+                Pellentesque sodales dictum ultrices. Fusce efficitur felis sed orci</p><!--Esto es el texto informativo bajo la foto al que le añadiremos la información a futuro-->
+            <img id="pequeña" src="../imagenes/index22.jpg" alt="Foto cara"><!--Foto deun cliente con testimonio debajo-->
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing eliti.</p><!--testimonio del cliente-->
+        </div>
+        <div class="item azul"><!--Esta es una de las tres columnas que tenemos hechas en esta página con responsive-->
+            <br>
+            <br>
+            <img id="grande" src="../imagenes/index3.jpg" alt="Tia fitness"><!--Foto del gimnasio con información bajo ella-->
+            <br>
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis no
+                n diam faucibus, tristique ante vitae, 
+                lobortis lorem. Integer eu eros commodo, rhoncus leo nec, moll
+                is enim. Phasellus eget augue nulla. 
+                Pellentesque sodales dictum ultrices. Fusce efficitur felis sed orci</p><!--Esto es el texto informativo bajo la foto al que le añadiremos la información a futuro-->
+            <img id="pequeña" src="../imagenes/index33.jpg" alt="Foto cara"><!--Foto deun cliente con testimonio debajo-->
+            <br>
+            <p id="textotripl">Lorem ipsum dolor sit amet, consectetur adipiscing eliti.</p><!--testimonio del cliente-->
+        </div>
+    </div>
+    <footer> <!--Pié con la marca del gimnasio y los iconos para enlazar a las redes sociales-->
+        <p id="ppie">GIMNASIO 360 ©</p>
+        <div id="iconos">
+        <a href="#"><i class="fab fa-twitter-square" style="font-size: 40;"></i></a><!--Icono de twitter-->
+        <a href="#"><i class="fab fa-facebook-square" style="font-size: 40;"></i></a><!--Icono de facebook-->
+        <a href="#"><i class="fab fa-instagram-square" style="font-size: 40;"></i></a><!--Icono de instagram-->
+        </div>
+    </footer>
+</body>
+<!--Script para cambiar de modo noche/dia-->
+<script>
+    const boscuro = document.querySelector('.boton-oscurobtn');
+    const cuerpo = document.querySelector('body');
+
+    boscuro.addEventListener('click', e => {
+        cuerpo.classList.toggle('modoOscuro')
+    })
+</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> <!--Script para los iconos-->
+<!--Script para que el menú sea responsive-->
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</html>
 ~~~
-
-## Anular Markdown
-
-<!--Si queremos usar cualquiera de los carácteres reservados por markdown, le añadiremos un slatch invertido justo antes del caracter reservado y así podremos utilizarlo inutilizando markdown.-->
-
-Así anulamos \*Markdown*.
